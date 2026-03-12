@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Temperature Converter</h2>
+
+Celsius: <input id="c">
+
+<button onclick="convert()">Convert</button>
+
+<p id="f"></p>
+
+<script>
+function convert(){
+let c=document.getElementById("c").value;
+let f=(c*9/5)+32;
+document.getElementById("f").innerText="Fahrenheit: "+f;
+}
+</script>
+
+</body>
+</html>
